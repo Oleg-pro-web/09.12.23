@@ -2,7 +2,7 @@ import { RecipeInfo } from "../RecipeInfo/RecipeInfo"
 export function Recipe({ recipe }) {
     return (
         < ul >
-            {recipe.map(({ name, time, servings, calories, difficulty, img }) => {
+            {recipe.map(({ name, time, servings, calories, difficulty, image }) => {
                 return <RecipeInfo
                     key={name}
                     name={name}
@@ -10,7 +10,7 @@ export function Recipe({ recipe }) {
                     servings={servings}
                     calories={calories}
                     difficulty={difficulty}
-                    img={img}
+                    img={image}
                 />
             })}
         </ul >
